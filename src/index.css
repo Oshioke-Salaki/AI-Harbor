@@ -1,0 +1,53 @@
+:root,
+html {
+    font-size: 62.58%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.btn-primary {
+    display: flex;
+    padding: 1.2rem 5.3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    border-radius: 5rem;
+    background: #ffd700;
+    color: #000;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: fit-content;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.lightsOn {
+    border: 0.2px solid #ffd700;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+}
