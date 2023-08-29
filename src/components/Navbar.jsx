@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
+import Logo from './Logo';
 
 function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <h2 className={styles.logo}>AIHabor</h2>
+      <Logo />
       <div className={styles.navRight}>
         <ul className={styles.navLinks}>
           <li>

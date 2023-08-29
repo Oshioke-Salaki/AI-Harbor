@@ -1,39 +1,30 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3.1rem 10rem 5rem;
-    background: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.1rem 10rem 5rem;
+  background: inherit;
 }
 
 .navRight {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    color: #fff;
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
+  display: flex;
+  align-items: center;
 }
 
 .navLinks {
-    display: flex;
-    align-items: center;
-    margin-right: 14.6rem;
+  display: flex;
+  align-items: center;
+  margin-right: 14.6rem;
 }
 
 .navLinks li {
-    margin-right: 9.7rem;
-    color: #fff;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  margin-right: 9.7rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-
 
 /* .navLinks li:last-child {
     margin-right: 0;
@@ -42,24 +33,24 @@
 
 .navLinks li,
 .navLinks a {
-    color: white;
+  color: white;
 }
 
 .navRight .btn-primary {
-    color: black !important;
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-shrink: 0;
-    border-radius: 5rem;
-    background: #ffd700;
-    color: #000;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-right: 0 !important;
-    margin-left: 14.6rem !important;
+  color: black !important;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+  border-radius: 5rem;
+  background: #ffd700;
+  color: #000;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-right: 0 !important;
+  margin-left: 14.6rem !important;
 }
