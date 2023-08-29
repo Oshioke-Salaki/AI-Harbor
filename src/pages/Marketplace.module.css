@@ -1,0 +1,27 @@
+.marketplace {
+  padding: 3rem 6rem 6.3rem;
+  background: inherit;
+}
+
+.marketTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.marketTop h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.modelsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 4rem;
+  width: 100%;
+}

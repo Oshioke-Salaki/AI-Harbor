@@ -23,7 +23,9 @@ function Homepage() {
             Deploy Your Own Model In Minutes, Or Access 100&apos;s Of
             <br /> AI Models With A Push Of A Button
           </p>
-          <NavLink className="btn btn-primary">Explore market place</NavLink>
+          <NavLink className="btn btn-primary" to="marketplace">
+            Explore market place
+          </NavLink>
         </div>
         <img src={homeImg} alt="" />
       </div>

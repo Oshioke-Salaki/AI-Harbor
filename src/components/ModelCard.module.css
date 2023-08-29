@@ -1,0 +1,29 @@
+.modelCard {
+  padding: 1.2rem 1.1rem 1.5rem;
+  background: #262626;
+  border-radius: 5px;
+}
+
+.modelCard img {
+  margin-bottom: 0.9rem;
+}
+
+.modelCard h1 {
+  color: #feda5b;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.modelCard p {
+  color: #c4c4c4;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+/* .modelCard img{
+
+} */

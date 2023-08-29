@@ -7,8 +7,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AppLayout />}>
-          <Route index element={<Navigate to="homepage" />} />
+        <Route index element={<Navigate to="home" />} />
+        <Route path="home" element={<AppLayout />}>
+          <Route index element={<Homepage />} />
           <Route path="homepage" element={<Homepage />} />
           <Route path="marketplace" element={<Marketplace />} />
           <Route path="products" element={<p>Products page</p>} />
