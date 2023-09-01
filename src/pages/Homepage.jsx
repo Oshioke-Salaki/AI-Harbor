@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import styles from './Homepage.module.css';
-import homeImg from '../assets/homeCover.png';
+import homeImg from '../assets/homeCover.jpg';
 import { NavLink } from 'react-router-dom';
 import Associates from '../components/Associates';
 
