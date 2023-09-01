@@ -64,7 +64,9 @@ function Navbar() {
         </ul>
         <NavLink
           to="signIn"
-          className="btn btn-primary"
+          className={`btn btn-primary ${
+            navColor === 'light' ? 'btn-Light' : ''
+          }`}
           onClick={() => {
             setNavColor('light');
           }}
