@@ -37,7 +37,6 @@
 }
 
 .navRight .btn-primary {
-  color: black !important;
   display: flex;
   padding: 1rem;
   justify-content: center;
@@ -45,8 +44,8 @@
   gap: 1rem;
   flex-shrink: 0;
   border-radius: 5rem;
-  background: #ffd700;
-  color: #000;
+  background: #0081fe;
+  color: #fff;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 600;

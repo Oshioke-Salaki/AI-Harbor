@@ -1,10 +1,28 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import Logo from './Logo';
+import { useState, useEffect } from 'react';
 
 function Navbar() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const pathname = window.location.pathname;
+  const [currentUrl, setCurrentUrl] = useState(pathname);
+  
+  useEffect(() => {
+    setCurrentUrl(pathname);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (currentUrl !== '/home') {
+      setLoggedIn(true);
+    } else {
+      setLoggedIn(false);
+    }
+  }, [currentUrl]);
+
   return (
     <nav className={styles.navbar}>
+      {loggedIn ? <Logo /> : ''}
       <Logo />
       <div className={styles.navRight}>
         <ul className={styles.navLinks}>
