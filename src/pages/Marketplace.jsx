@@ -10,6 +10,7 @@ import model5 from '../assets/model5.png';
 import model6 from '../assets/model6.png';
 import model7 from '../assets/model7.png';
 import model8 from '../assets/model8.png';
+import NewsLetter from '../components/NewsLetter';
 
 function Marketplace() {
   const dummyModels = [
@@ -73,21 +74,24 @@ function Marketplace() {
 
   const [models] = useState(dummyModels);
   return (
-    <div className={styles.marketplace}>
-      <div className={styles.marketTop}>
-        <h2>Marketplace</h2>
-        <NavLink className="addModelBtn">Create new model</NavLink>
+    <div>
+      <div className={styles.marketplace}>
+        <div className={styles.marketTop}>
+          <h2>Marketplace</h2>
+          <NavLink className="addModelBtn">Create new model</NavLink>
+        </div>
+        <div className={styles.modelsContainer}>
+          {models.map((model) => (
+            <ModelCard
+              key={model.id}
+              title={model.title}
+              description={model.description}
+              img={model.img}
+            />
+          ))}
+        </div>
       </div>
-      <div className={styles.modelsContainer}>
-        {models.map((model) => (
-          <ModelCard
-            key={model.id}
-            title={model.title}
-            description={model.description}
-            img={model.img}
-          />
-        ))}
-      </div>
+      <NewsLetter />
     </div>
   );
 }

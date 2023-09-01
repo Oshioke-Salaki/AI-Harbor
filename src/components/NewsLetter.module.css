@@ -1,0 +1,48 @@
+.newsletterForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8.1rem 0 7.7rem;
+  opacity: 0.1;
+  background: var(--Linear, linear-gradient(90deg, #513eff 0%, #52e5ff 100%));
+}
+
+.newsletterForm label {
+  color: var(--Dark, #0a142f);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-right: 3.4rem;
+}
+
+.newsletterInput {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 38rem;
+  height: fit-content;
+}
+
+.newsletterInput input {
+  width: 38rem;
+  /* height: 7.2rem; */
+  padding: 2.4rem 0 2.6rem 2.9rem;
+  flex-shrink: 0;
+  border-radius: 3.6rem;
+  background: #fff;
+  border-radius: 36px;
+  color: var(--Dark, #0a142f);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.55;
+}
+
+.newsletterInput svg {
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+}
