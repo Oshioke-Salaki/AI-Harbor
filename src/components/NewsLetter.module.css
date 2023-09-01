@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   padding: 8.1rem 0 7.7rem;
-  opacity: 0.1;
   background: var(--Linear, linear-gradient(90deg, #513eff 0%, #52e5ff 100%));
 }
 
