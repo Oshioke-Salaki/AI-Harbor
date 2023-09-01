@@ -3,7 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 3.1rem 10rem 5rem;
+}
+
+.navbarDark {
   background: inherit;
+}
+
+.navbarLight {
+  background-color: #fff;
 }
 
 .navRight {
@@ -19,11 +26,15 @@
 
 .navLinks li {
   margin-right: 9.7rem;
-  color: #fff;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+.navbarDark li,
+.navbarDark a {
+  color: #fff;
 }
 
 /* .navLinks li:last-child {
@@ -31,9 +42,9 @@
     
 } */
 
-.navLinks li,
-.navLinks a {
-  color: white;
+.navbarLight li,
+.navbarLight a {
+  color: black;
 }
 
 .navRight .btn-primary {
