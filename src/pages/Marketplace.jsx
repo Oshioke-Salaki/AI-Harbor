@@ -13,6 +13,7 @@ import model8 from '../assets/model8.png';
 import NewsLetter from '../components/NewsLetter';
 import Footer from '../components/Footer';
 import NewModelModal from '../components/NewModelModal';
+import { createPortal } from 'react-dom';
 
 const dummyModels = [
   {
@@ -77,8 +78,12 @@ function Marketplace() {
   const [models] = useState(dummyModels);
   const [showModal, setShowModal] = useState(false);
   return (
-    <div className={styles.marketplaceContainer}>
-      {showModal && <NewModelModal setShowModal={setShowModal} />}
+    <div>
+      {showModal &&
+        createPortal(
+          <NewModelModal setShowModal={setShowModal} />,
+          document.body
+        )}
       <div className={styles.marketplace}>
         <div className={styles.marketTop}>
           <div className={styles.marketplaceToggle}>
