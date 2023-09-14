@@ -1,14 +1,14 @@
 import styles from './AppLayout.module.css';
 import Navbar from '../components/Navbar';
 import { Outlet } from 'react-router-dom';
-// import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-function AppLayout() {
+function AppLayout({ navColor, setNavColor }) {
   // const [loggedIn, setLoggedIn] = useState(false);
 
   return (
     <div className={styles.appLayout}>
-      <Navbar />
+      <Navbar navColor={navColor} setNavColor={setNavColor} />
       <Outlet />
     </div>
   );

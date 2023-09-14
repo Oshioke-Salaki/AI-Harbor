@@ -1,0 +1,40 @@
+.footer {
+  padding: 9rem 0 9rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.footer svg {
+  margin-bottom: 2.7rem;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.7rem;
+}
+
+.footerLinks li {
+  margin-right: 5.7rem;
+}
+
+.footerLinks li,
+.footerLinks li a {
+  color: var(--Dark, #0a142f);
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer h6 {
+  color: var(--Dark, #0a142f);
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.65;
+}

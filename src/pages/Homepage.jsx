@@ -4,7 +4,7 @@ import homeImg from '../assets/homeCover.png';
 import { NavLink } from 'react-router-dom';
 import Associates from '../components/Associates';
 
-function Homepage() {
+function Homepage({ setNavColor }) {
   const [lightsOn, setLightsOn] = useState(false);
   useEffect(() => {
     const id = setInterval(() => {
@@ -23,7 +23,13 @@ function Homepage() {
             Deploy Your Own Model In Minutes, Or Access 100&apos;s Of
             <br /> AI Models With A Push Of A Button
           </p>
-          <NavLink className="btn btn-primary" to="marketplace">
+          <NavLink
+            className="btn btn-primary"
+            to="marketplace"
+            onClick={() => {
+              setNavColor('light');
+            }}
+          >
             Explore market place
           </NavLink>
         </div>

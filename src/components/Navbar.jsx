@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import Logo from './Logo';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-function Navbar() {
+function Navbar({ navColor, setNavColor }) {
   // const [loggedIn, setLoggedIn] = useState(false);
   // const pathname = window.location.pathname;
   // const [currentUrl, setCurrentUrl] = useState(pathname);
@@ -19,7 +19,12 @@ function Navbar() {
   //     setLoggedIn(false);
   //   }
   // }, [currentUrl]);
-  const [navColor, setNavColor] = useState('default');
+
+  useEffect(() => {
+    if (window.location.pathname === '/home') {
+      setNavColor('default');
+    } else setNavColor('light');
+  }, [setNavColor]);
 
   return (
     <nav

@@ -1,3 +1,6 @@
+.marketplaceContainer {
+  position: relative;
+}
 .marketplace {
   padding: 3rem 6rem 6.3rem;
   background: #f6f3f3;
@@ -10,12 +13,24 @@
   margin-bottom: 2rem;
 }
 
-.marketTop h2 {
-  color: black;
+.marketplaceToggle {
+  display: flex;
+}
+
+.marketplaceToggle h2:first-child {
+  margin-right: 1.6rem;
+}
+
+.marketplaceToggle h2 {
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
+  color: #c4c4c4;
   line-height: normal;
+}
+
+.marketplaceToggle .active {
+  color: black;
 }
 
 .modelsContainer {

@@ -1,7 +1,7 @@
 .homepage {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   padding: 8.3rem 0 3rem;
   border: 0.2px solid transparent;
 }
